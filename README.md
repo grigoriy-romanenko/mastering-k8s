@@ -302,3 +302,8 @@ sudo kubebuilder/bin/kubectl get all -A
 11. Start kubelet
 12. Start controller manager
 13. Verify setup
+
+## Homework:
+```bash
+sudo kubebuilder/bin/kubectl taint node "$NODE_NAME" node.cloudprovider.kubernetes.io/uninitialized:NoSchedule-
+```
